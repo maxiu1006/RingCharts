@@ -16,11 +16,11 @@
 		15D6920E22AAA179006D8FB2 /* RingChartsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D6920D22AAA179006D8FB2 /* RingChartsUITests.m */; };
 		15D6922122AAA2A9006D8FB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D6922022AAA2A9006D8FB2 /* ViewController.m */; };
 		15D6922422AAA3BB006D8FB2 /* RingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D6922322AAA3BB006D8FB2 /* RingModel.m */; };
-		15D6922E22AAA61A006D8FB2 /* ResourceStatisticsPieSampleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D6922622AAA61A006D8FB2 /* ResourceStatisticsPieSampleCollectionViewCell.m */; };
+		15D6922E22AAA61A006D8FB2 /* RingBottomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D6922622AAA61A006D8FB2 /* RingBottomCollectionViewCell.m */; };
 		15D6922F22AAA61A006D8FB2 /* YDCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D6922822AAA61A006D8FB2 /* YDCircleProgressView.m */; };
-		15D6923022AAA61A006D8FB2 /* ResourceStatisticsPieSampleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D6922A22AAA61A006D8FB2 /* ResourceStatisticsPieSampleCollectionViewCell.xib */; };
-		15D6923122AAA61A006D8FB2 /* ResourcesStatisticsAnnularFigureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D6922C22AAA61A006D8FB2 /* ResourcesStatisticsAnnularFigureCollectionViewCell.m */; };
-		15D6923222AAA61A006D8FB2 /* ResourcesStatisticsAnnularFigureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D6922D22AAA61A006D8FB2 /* ResourcesStatisticsAnnularFigureCollectionViewCell.xib */; };
+		15D6923022AAA61A006D8FB2 /* RingBottomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D6922A22AAA61A006D8FB2 /* RingBottomCollectionViewCell.xib */; };
+		15D6923122AAA61A006D8FB2 /* RingMainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D6922C22AAA61A006D8FB2 /* RingMainCollectionViewCell.m */; };
+		15D6923222AAA61A006D8FB2 /* RingMainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D6922D22AAA61A006D8FB2 /* RingMainCollectionViewCell.xib */; };
 		E004B49B4D907289B0A00E6E /* libPods-RingCharts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C940FDCB66947606C9268D5 /* libPods-RingCharts.a */; };
 /* End PBXBuildFile section */
 
@@ -61,14 +61,14 @@
 		15D6922222AAA3BB006D8FB2 /* RingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RingModel.h; sourceTree = "<group>"; };
 		15D6922322AAA3BB006D8FB2 /* RingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RingModel.m; sourceTree = "<group>"; };
 		15D6922522AAA511006D8FB2 /* AppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
-		15D6922622AAA61A006D8FB2 /* ResourceStatisticsPieSampleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceStatisticsPieSampleCollectionViewCell.m; sourceTree = "<group>"; };
-		15D6922722AAA61A006D8FB2 /* ResourcesStatisticsAnnularFigureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourcesStatisticsAnnularFigureCollectionViewCell.h; sourceTree = "<group>"; };
+		15D6922622AAA61A006D8FB2 /* RingBottomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RingBottomCollectionViewCell.m; sourceTree = "<group>"; };
+		15D6922722AAA61A006D8FB2 /* RingMainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingMainCollectionViewCell.h; sourceTree = "<group>"; };
 		15D6922822AAA61A006D8FB2 /* YDCircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDCircleProgressView.m; sourceTree = "<group>"; };
-		15D6922922AAA61A006D8FB2 /* ResourceStatisticsPieSampleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceStatisticsPieSampleCollectionViewCell.h; sourceTree = "<group>"; };
-		15D6922A22AAA61A006D8FB2 /* ResourceStatisticsPieSampleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResourceStatisticsPieSampleCollectionViewCell.xib; sourceTree = "<group>"; };
+		15D6922922AAA61A006D8FB2 /* RingBottomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingBottomCollectionViewCell.h; sourceTree = "<group>"; };
+		15D6922A22AAA61A006D8FB2 /* RingBottomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RingBottomCollectionViewCell.xib; sourceTree = "<group>"; };
 		15D6922B22AAA61A006D8FB2 /* YDCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDCircleProgressView.h; sourceTree = "<group>"; };
-		15D6922C22AAA61A006D8FB2 /* ResourcesStatisticsAnnularFigureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourcesStatisticsAnnularFigureCollectionViewCell.m; sourceTree = "<group>"; };
-		15D6922D22AAA61A006D8FB2 /* ResourcesStatisticsAnnularFigureCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResourcesStatisticsAnnularFigureCollectionViewCell.xib; sourceTree = "<group>"; };
+		15D6922C22AAA61A006D8FB2 /* RingMainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RingMainCollectionViewCell.m; sourceTree = "<group>"; };
+		15D6922D22AAA61A006D8FB2 /* RingMainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RingMainCollectionViewCell.xib; sourceTree = "<group>"; };
 		4C940FDCB66947606C9268D5 /* libPods-RingCharts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RingCharts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62786F4887AE08E0DE85540B /* Pods-RingCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingCharts.debug.xcconfig"; path = "Target Support Files/Pods-RingCharts/Pods-RingCharts.debug.xcconfig"; sourceTree = "<group>"; };
 		AD340D189517510E0AF61952 /* Pods-RingCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingCharts.release.xcconfig"; path = "Target Support Files/Pods-RingCharts/Pods-RingCharts.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,12 +187,12 @@
 		15D6921E22AAA26D006D8FB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				15D6922722AAA61A006D8FB2 /* ResourcesStatisticsAnnularFigureCollectionViewCell.h */,
-				15D6922C22AAA61A006D8FB2 /* ResourcesStatisticsAnnularFigureCollectionViewCell.m */,
-				15D6922D22AAA61A006D8FB2 /* ResourcesStatisticsAnnularFigureCollectionViewCell.xib */,
-				15D6922922AAA61A006D8FB2 /* ResourceStatisticsPieSampleCollectionViewCell.h */,
-				15D6922622AAA61A006D8FB2 /* ResourceStatisticsPieSampleCollectionViewCell.m */,
-				15D6922A22AAA61A006D8FB2 /* ResourceStatisticsPieSampleCollectionViewCell.xib */,
+				15D6922722AAA61A006D8FB2 /* RingMainCollectionViewCell.h */,
+				15D6922C22AAA61A006D8FB2 /* RingMainCollectionViewCell.m */,
+				15D6922D22AAA61A006D8FB2 /* RingMainCollectionViewCell.xib */,
+				15D6922922AAA61A006D8FB2 /* RingBottomCollectionViewCell.h */,
+				15D6922622AAA61A006D8FB2 /* RingBottomCollectionViewCell.m */,
+				15D6922A22AAA61A006D8FB2 /* RingBottomCollectionViewCell.xib */,
 				15D6922B22AAA61A006D8FB2 /* YDCircleProgressView.h */,
 				15D6922822AAA61A006D8FB2 /* YDCircleProgressView.m */,
 			);
@@ -321,10 +321,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15D6923022AAA61A006D8FB2 /* ResourceStatisticsPieSampleCollectionViewCell.xib in Resources */,
+				15D6923022AAA61A006D8FB2 /* RingBottomCollectionViewCell.xib in Resources */,
 				15D691F622AAA179006D8FB2 /* LaunchScreen.storyboard in Resources */,
 				15D691F322AAA179006D8FB2 /* Assets.xcassets in Resources */,
-				15D6923222AAA61A006D8FB2 /* ResourcesStatisticsAnnularFigureCollectionViewCell.xib in Resources */,
+				15D6923222AAA61A006D8FB2 /* RingMainCollectionViewCell.xib in Resources */,
 				15D691F122AAA177006D8FB2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,8 +400,8 @@
 				15D6922122AAA2A9006D8FB2 /* ViewController.m in Sources */,
 				15D691F922AAA179006D8FB2 /* main.m in Sources */,
 				15D691EB22AAA177006D8FB2 /* AppDelegate.m in Sources */,
-				15D6922E22AAA61A006D8FB2 /* ResourceStatisticsPieSampleCollectionViewCell.m in Sources */,
-				15D6923122AAA61A006D8FB2 /* ResourcesStatisticsAnnularFigureCollectionViewCell.m in Sources */,
+				15D6922E22AAA61A006D8FB2 /* RingBottomCollectionViewCell.m in Sources */,
+				15D6923122AAA61A006D8FB2 /* RingMainCollectionViewCell.m in Sources */,
 				15D6922F22AAA61A006D8FB2 /* YDCircleProgressView.m in Sources */,
 				15D6922422AAA3BB006D8FB2 /* RingModel.m in Sources */,
 			);

@@ -1,9 +1,9 @@
 //
 //  YDCircleProgressView.h
-//  Merchants
+//  RingCharts
 //
-//  Created by maxiu on 2018/10/30.
-//  Copyright © 2018 yida. All rights reserved.
+//  Created by xiaoxh on 2019/6/7.
+//  Copyright © 2019 肖祥宏. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

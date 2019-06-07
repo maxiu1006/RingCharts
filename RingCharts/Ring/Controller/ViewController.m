@@ -9,8 +9,7 @@
 #import "ViewController.h"
 #import "RingModel.h"
 #import "AppMacro.h"
-#import "ResourcesStatisticsAnnularFigureCollectionViewCell.h"
-
+#import "RingMainCollectionViewCell.h"
 
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic,strong)UICollectionView *collectionview;
@@ -23,7 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.pieHight = 300;
     [self.view addSubview:self.collectionview];
     NSMutableArray *array = [[NSMutableArray alloc] init];
@@ -76,30 +74,22 @@
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    
     return 1;
 }
-
 #pragma mark - UICollectionViewDelegate
 - (UICollectionViewCell*)collectionView:(UICollectionView*)collectionView cellForItemAtIndexPath:(NSIndexPath*)indexPath
 {
-    
-    ResourcesStatisticsAnnularFigureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kResourcesStatisticsAnnularFigureCollectionViewCell forIndexPath:indexPath];
+    RingMainCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kRingMainCollectionViewCell forIndexPath:indexPath];
     if (!cell) {
-        cell = [[ResourcesStatisticsAnnularFigureCollectionViewCell alloc] init];
+        cell = [[RingMainCollectionViewCell alloc] init];
     }
     cell.contentView.backgroundColor = [UIColor whiteColor];
     if (self.dataArray.count > indexPath.section) {
         [cell setModel:self.dataArray[indexPath.section]];
     }
-    
     return cell;
-    
 }
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(nonnull UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    //    if (indexPath.section == 0) {
-    //        return CGSizeMake((K_SCREEN_WIDTH-20)/2, 130);
-    //    }
     if (self.dataArray.count > indexPath.section) {
         RingModel *reModel = self.dataArray[indexPath.section];
         return CGSizeMake(kScreenWidth-20, reModel.pieHight);
@@ -108,9 +98,6 @@
     
 }
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    //    if (section == 0) {
-    //        return CGSizeMake(K_SCREEN_WIDTH, 50);
-    //    }
     return CGSizeMake(0, 0);
 }
 #pragma mark - Lazy loading
@@ -120,13 +107,11 @@
         layout.minimumLineSpacing = 0;//横向间距
         layout.minimumInteritemSpacing = 0;//纵向间距
         layout.sectionInset = UIEdgeInsetsMake(0, 10, 10, 10);
-        
         _collectionview = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-kTopBarHeight) collectionViewLayout:layout];
         _collectionview.delegate = self;
         _collectionview.dataSource = self;
         _collectionview.backgroundColor = kCorlorFromHexcode(0xfafafa);
-        
-        [_collectionview registerNib:[UINib nibWithNibName:NSStringFromClass([ResourcesStatisticsAnnularFigureCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:kResourcesStatisticsAnnularFigureCollectionViewCell];
+        [_collectionview registerNib:[UINib nibWithNibName:NSStringFromClass([RingMainCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:kRingMainCollectionViewCell];
     }
     return _collectionview;
 }

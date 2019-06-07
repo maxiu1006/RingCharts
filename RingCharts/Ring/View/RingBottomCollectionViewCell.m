@@ -1,15 +1,15 @@
 //
-//  ResourceStatisticsPieSampleCollectionViewCell.m
-//  Merchants
+//  RingBottomCollectionViewCell.m
+//  RingCharts
 //
-//  Created by maxiu on 2018/11/10.
-//  Copyright © 2018 yida. All rights reserved.
+//  Created by xiaoxh on 2019/6/7.
+//  Copyright © 2019 肖祥宏. All rights reserved.
 //
 
-#import "ResourceStatisticsPieSampleCollectionViewCell.h"
+#import "RingBottomCollectionViewCell.h"
 #import "AppMacro.h"
 
-@implementation ResourceStatisticsPieSampleCollectionViewCell
+@implementation RingBottomCollectionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

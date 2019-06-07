@@ -1,19 +1,19 @@
 //
-//  ResourcesStatisticsAnnularFigureCollectionViewCell.m
-//  Merchants
+//  RingMainCollectionViewCell.m
+//  RingCharts
 //
-//  Created by maxiu on 2018/10/30.
-//  Copyright © 2018 yida. All rights reserved.
+//  Created by xiaoxh on 2019/6/7.
+//  Copyright © 2019 肖祥宏. All rights reserved.
 //
 
-#import "ResourcesStatisticsAnnularFigureCollectionViewCell.h"
+#import "RingMainCollectionViewCell.h"
 #import "YDCircleProgressView.h"
-#import "ResourceStatisticsPieSampleCollectionViewCell.h"
+#import "RingBottomCollectionViewCell.h"
 #import "AppMacro.h"
 #define kScreenWidth kScreenBounds.size.width
 #define kScreenHeight kScreenBounds.size.height
 
-@interface ResourcesStatisticsAnnularFigureCollectionViewCell ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface RingMainCollectionViewCell ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UIView *upperLeftView;
 @property (weak, nonatomic) IBOutlet UILabel *topTitleLb;
 @property (weak, nonatomic) IBOutlet UIView *circleView;
@@ -22,7 +22,7 @@
 @property(nonatomic, strong)YDCircleProgressView *circleProgress;//圆环
 @property(nonatomic, strong)UICollectionViewFlowLayout *layout;
 @end
-@implementation ResourcesStatisticsAnnularFigureCollectionViewCell
+@implementation RingMainCollectionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -37,7 +37,7 @@
     self.layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
     self.collectionView.collectionViewLayout = self.layout;
     
-    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([ResourceStatisticsPieSampleCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:kResourceStatisticsPieSampleCollectionViewCell];
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([RingBottomCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:kRingBottomCollectionViewCell];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     
@@ -87,9 +87,9 @@
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    ResourceStatisticsPieSampleCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kResourceStatisticsPieSampleCollectionViewCell forIndexPath:indexPath];
+    RingBottomCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kRingBottomCollectionViewCell forIndexPath:indexPath];
     if (!cell) {
-        cell = [[ResourceStatisticsPieSampleCollectionViewCell alloc] init];
+        cell = [[RingBottomCollectionViewCell alloc] init];
     }
     if (self.model.dataList.count > indexPath.item) {
         [cell setListModel:self.model.dataList[indexPath.item]];
